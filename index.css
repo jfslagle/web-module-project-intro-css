@@ -19,22 +19,29 @@ font: inherit;
 vertical-align: baseline;  
 }
 
-* {
+*, p, button {
     font-family: roboto;
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
 }
 nav {
     margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
 }
 button {
-    display: inline-block;
-    width: 13%;
+    width: 12rem;
     height: 5rem;
-    margin-left: 15%;
-    text-align: center;
-    border-radius: 12px;
-    font-size: 27px;
+    /* margin-left: 15%; */
+    border-radius: 1.5rem;
+    font-size: 140%;
     color: white;
     border: none;
+}
+button: hover {
+    animation: rotate 2s;
 }
 .A {
     background-color: #FF764E;
@@ -44,18 +51,25 @@ button {
 }
 .C {
     background-color: #FFCD69;
-    margin-right: 15%;
+    /* margin-right: 15%; */
 }
 
 #welcome {
-    background-color: #FF764E;
+    /* background-color: #FF764E; */
+    display: flex;
+    font-size: 150%;
 }
 
 #headerimg {
     border-radius: 50%;
     padding: 7%;
     width: 20rem;
-    float: left;
+    /* display: inline-block; */
+    /* float: left; */
+}
+
+#welcome div {
+    margin: auto 0;
 }
 
 @font-face {
@@ -65,9 +79,43 @@ button {
   
 #chelsea {
     font-family: chelseamarket;
-    font-size: 72px;
+    font-size: 300%;
 }
 @font-face {
     font-family: roboto;
     src: url(assets/RobotoMono-VariableFont_wght.ttf);
+
   }
+.bub {
+    background-color: #DDB9A3;
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+    padding: 10px;
+}
+  #footerimg {
+      height: 270px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 0px -50px;
+      /* margin-bottom: 0px; */
+  }
+  #bottomNav {
+      background-color: #F9E7DC;
+      margin-top: 0px;
+      padding: 2rem 0 2rem 0;
+  }
+  .stickers {
+      margin: 0 auto;
+      width: 50%;
+
+  }
+  .middleStuff {
+      margin: 2rem auto;
+      width: 35%;
+  }
+#fireSticker {
+    
+}
